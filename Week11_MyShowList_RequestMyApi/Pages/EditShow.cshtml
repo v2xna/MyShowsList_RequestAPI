@@ -1,0 +1,76 @@
+﻿@page
+@model Week11_MyShowList_RequestMyApi.Pages.EditShowModel
+@{
+	ViewData["Picture"] = Model.Request.Cookies["LoggedUserPicture"];
+}
+
+<div class="form-show">
+	@if (Model.Error != null)
+	{
+				<div class="alert alert-danger text-center">@Model.Error</div>
+	}
+	<form method="post">
+		<div class="mb-3">
+			<label asp-for="@Model.Show.Picture" class="form-label"></label>
+			<input asp-for="@Model.Show.Picture" class="form-control" />
+			<span asp-validation-for="@Model.Show.Picture" class="text-danger"></span>
+		</div>
+
+		<div class="row mb-3">
+			<div class="col-md-6">
+				<label asp-for="@Model.Show.Id" class="form-label"></label>
+				<input asp-for="@Model.Show.Id" class="form-control" readonly />
+				<span asp-validation-for="@Model.Show.Id" class="text-danger"></span>
+			</div>
+			<div class="col-md-6">
+				<label asp-for="@Model.Show.Title" class="form-label"></label>
+				<input asp-for="@Model.Show.Title" class="form-control" />
+				<span asp-validation-for="@Model.Show.Title" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="@Model.Show.Synopsis" class="form-label"></label>
+			<textarea asp-for="@Model.Show.Synopsis" class="form-control" rows="3" ></textarea>
+			<span asp-validation-for="@Model.Show.Synopsis" class="text-danger"></span>
+		</div>
+
+		<div class="row mb-3">
+			<div class="col-md-4">
+				<label asp-for="@Model.Show.Type" class="form-label"></label>
+				<input asp-for="@Model.Show.Type" class="form-control" />
+				<span asp-validation-for="@Model.Show.Type" class="text-danger"></span>
+			</div>
+			<div class="col-md-4">
+				<label asp-for="@Model.Show.Genres" class="form-label"></label>
+				<input asp-for="@Model.Show.Genres" class="form-control" />
+				<span asp-validation-for="@Model.Show.Genres" class="text-danger"></span>
+			</div>
+			<div class="col-md-4">
+				<label asp-for="@Model.Show.Episodes" class="form-label"></label>
+				<input asp-for="@Model.Show.Episodes" class="form-control" />
+				<span asp-validation-for="@Model.Show.Episodes" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<label asp-for="@Model.Show.Studio" class="form-label"></label>
+				<input asp-for="@Model.Show.Studio" class="form-control" />
+				<span asp-validation-for="@Model.Show.Studio" class="text-danger"></span>
+			</div>
+			<div class="col-md-4">
+				<label asp-for="@Model.Show.Aired" class="form-label"></label>
+				<input type="date" asp-for="@Model.Show.Aired" class="form-control" />
+				<span asp-validation-for="@Model.Show.Aired" class="text-danger"></span>
+			</div>
+			<div class="col-md-4">
+				<label asp-for="@Model.Show.Language" class="form-label"></label>
+				<input asp-for="@Model.Show.Language" class="form-control" />
+				<span asp-validation-for="@Model.Show.Language" class="text-danger"></span>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-primary mt-4 w-100">Update</button>
+		<a asp-page="/Index" class="btn btn-dark mt-2 w-100">Cancel</a>
+	</form>
+</div>

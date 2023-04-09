@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Week11_MyShowList_RequestMyApi
+build_property.RootNamespace = Week11_MyShowList_RequestMyApi
+build_property.ProjectDir = C:\Users\GAMER\Desktop\C#\Week11_MyShowList_RequestMyApi\Week11_MyShowList_RequestMyApi\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\GAMER\Desktop\C#\Week11_MyShowList_RequestMyApi\Week11_MyShowList_RequestMyApi
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/AddShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/DeleteShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/EditShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFNob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/MoreInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9yZUluZm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/UserShowsList/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclNob3dzTGlzdFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/UserShowsList/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclNob3dzTGlzdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/UserShowsList/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclNob3dzTGlzdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/UserShowsList/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclNob3dzTGlzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GAMER/Desktop/C\#/Week11_MyShowList_RequestMyApi/Week11_MyShowList_RequestMyApi/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ioe51g4ror

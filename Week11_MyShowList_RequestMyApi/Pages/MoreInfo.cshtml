@@ -1,0 +1,36 @@
+﻿@page
+@model Week11_MyShowList_RequestMyApi.Pages.MoreInfoModel
+@{
+    ViewData["Picture"] = Model.Request.Cookies["LoggedUserPicture"];
+}
+
+<div class="d-flex flex-row justify-content-evenly mt-4">
+
+    <img class="w-25 p-3" src="@Model.Show.Picture" />
+    <div class="p-3">
+        <h3 class="mb-4 fs-1">@Model.Show.Title</h3>
+
+        <h4>Synopsis</h4>
+        <p class="w-75">@Model.Show.Synopsis</p>
+
+        <h4>Type</h4>
+        <p>@Model.Show.Type</p>
+
+        <h4>Genres</h4>
+        <p>@Model.Show.Genres</p>
+
+        <h4>Episodes</h4>
+        <p>@Model.Show.Episodes</p>
+
+        <h4>Studio</h4>
+        <p>@Model.Show.Studio</p>
+
+        <h4>Aired</h4>
+        <p>@Model.dateOnlyString</p>
+
+        <h4>Language</h4>
+        <p>@Model.Show.Language</p>
+
+
+    </div>
+</div>

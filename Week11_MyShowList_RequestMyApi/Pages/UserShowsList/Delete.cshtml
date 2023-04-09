@@ -1,0 +1,13 @@
+﻿@page
+@model Week11_MyShowList_RequestMyApi.Pages.UserShowsList.DeleteModel
+@{
+	ViewData["Picture"] = Model.Request.Cookies["LoggedUserPicture"];
+}
+
+<form method="post"> 
+	<h2>Are you sure you want to remove this show?</h2>
+	<h2>@Model.MyShow.ShowId</h2>
+	<button type="submit" class="btn btn-danger">Remove</button>
+	<a asp-page="/UserShowsList/Index" class="btn btn-dark">Cancel</a>
+</form>
+

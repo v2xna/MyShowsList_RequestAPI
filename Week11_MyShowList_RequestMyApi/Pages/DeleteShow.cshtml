@@ -1,0 +1,79 @@
+﻿@page
+@model Week11_MyShowList_RequestMyApi.Pages.DeleteShowModel
+@{
+	ViewData["Picture"] = Model.Request.Cookies["LoggedUserPicture"];
+}
+
+@*<h1>Are you sure you want to permanently delete this show from the database?</h1>
+<h2>ID: @Model.Show.Id</h2>
+<h2>ID: @Model.Show.Title</h2>*@
+
+<div class="form-show">
+	<form method="post">
+		@*needed for OnPost() --> delete but we have it below*@
+		@*<input asp-for="@Model.Show.Id" hidden />*@ 
+		<div class="mb-3">
+			<label asp-for="@Model.Show.Picture"></label>
+			<input asp-for="@Model.Show.Picture" class="form-control" readonly />
+			<span asp-validation-for="@Model.Show.Picture" class="text-danger"></span>
+		</div>
+
+		<div class="row mb-3">
+			<div class="col-md-6">
+				<label asp-for="@Model.Show.Id" class="form-label"></label>
+				<input asp-for="@Model.Show.Id" class="form-control" readonly />
+				<span asp-validation-for="@Model.Show.Id" class="text-danger"></span>
+			</div>
+			<div class="col-md-6">
+				<label asp-for="@Model.Show.Title" class="form-label"></label>
+				<input asp-for="@Model.Show.Title" class="form-control" readonly />
+				<span asp-validation-for="@Model.Show.Title" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="@Model.Show.Synopsis" class="form-label"></label>
+			<textarea asp-for="@Model.Show.Synopsis" class="form-control" rows="3" readonly ></textarea>
+			<span asp-validation-for="@Model.Show.Synopsis" class="text-danger"></span>
+		</div>
+
+		<div class="row mb-3">
+			<div class="col-md-4">
+				<label asp-for="@Model.Show.Type" class="form-label"></label>
+				<input asp-for="@Model.Show.Type" class="form-control" readonly />
+				<span asp-validation-for="@Model.Show.Type" class="text-danger"></span>
+			</div>
+			<div class="col-md-4">
+				<label asp-for="@Model.Show.Genres" class="form-label"></label>
+				<input asp-for="@Model.Show.Genres" class="form-control" readonly />
+				<span asp-validation-for="@Model.Show.Genres" class="text-danger"></span>
+			</div>
+			<div class="col-md-4">
+				<label asp-for="@Model.Show.Episodes" class="form-label"></label>
+				<input asp-for="@Model.Show.Episodes" class="form-control" readonly />
+				<span asp-validation-for="@Model.Show.Episodes" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<label asp-for="@Model.Show.Studio" class="form-label"></label>
+				<input asp-for="@Model.Show.Studio" class="form-control" readonly />
+				<span asp-validation-for="@Model.Show.Studio" class="text-danger"></span>
+			</div>
+			<div class="col-md-4">
+				<label asp-for="@Model.Show.Aired" class="form-label"></label>
+				<input type="date" asp-for="@Model.Show.Aired" class="form-control" readonly />
+				<span asp-validation-for="@Model.Show.Aired" class="text-danger"></span>
+			</div>
+			<div class="col-md-4">
+				<label asp-for="@Model.Show.Language" class="form-label"></label>
+				<input asp-for="@Model.Show.Language" class="form-control" readonly />
+				<span asp-validation-for="@Model.Show.Language" class="text-danger"></span>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-danger mt-4 w-100">Yes, delete</button>
+		<a asp-page="/Index" class="btn btn-dark mt-2 w-100">Cancel</a>
+	</form>
+</div>
+

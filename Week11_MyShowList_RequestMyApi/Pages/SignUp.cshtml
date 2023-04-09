@@ -1,0 +1,45 @@
+﻿@page
+@model Week11_MyShowList_RequestMyApi.Pages.SignUpModel
+@{
+	if (Model.Error != null)
+	{
+		<div class="alert alert-danger col-md-6 text-center">@Model.Error</div>
+	}
+}
+<div class="text-center">
+	<h2 class="fw-bold">Sign up for free</h2>
+</div>
+
+<div class="form-center">
+	<form method="post">
+		<div class="form-group">
+			<label asp-for="@Model.User.Picture"></label>
+			<input asp-for="@Model.User.Picture" class="form-control" />
+			<span asp-validation-for="@Model.User.Picture" class="text-danger"></span>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<label asp-for="@Model.User.FirstName"></label>
+				<input asp-for="@Model.User.FirstName" class="form-control" />
+				<span asp-validation-for="@Model.User.FirstName" class="text-danger"></span>
+			</div>
+			<div class="col-md-6">
+				<label asp-for="@Model.User.LastName"></label>
+				<input asp-for="@Model.User.LastName" class="form-control" />
+				<span asp-validation-for="@Model.User.LastName" class="text-danger"></span>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label asp-for="@Model.User.Username"></label>
+			<input asp-for="@Model.User.Username" class="form-control" />
+			<span asp-validation-for="@Model.User.Username" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="@Model.User.Password"></label>
+			<input type="password" asp-for="@Model.User.Password" class="form-control" />
+			<span asp-validation-for="@Model.User.Password" class="text-danger"></span>
+		</div>
+		<button type="submit" class="btn btn-primary mt-4 w-100">Sign Up</button>
+	</form>
+</div>

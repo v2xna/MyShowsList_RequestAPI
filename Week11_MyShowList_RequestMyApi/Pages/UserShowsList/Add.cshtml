@@ -1,0 +1,34 @@
+﻿@page
+@model Week11_MyShowList_RequestMyApi.Pages.UserShowsList.AddModel
+@{
+	ViewData["Picture"] = Model.Request.Cookies["LoggedUserPicture"];
+}
+
+<div class="w-25 m-auto mt-3">
+	@if (Model.Error != null)
+	{
+		<div class="alert alert-danger">@Model.Error</div>
+	}
+	
+	<form method="post">
+		<input asp-for="@Model.MyShow.UserId" hidden />
+		<input asp-for="@Model.MyShow.ShowId" hidden />
+		<div class="mb-3">
+			<label asp-for="@Model.MyShow.Rating" class="form-label"></label>
+			<input asp-for="@Model.MyShow.Rating" class="form-control" />
+			<span asp-validation-for=@Model.MyShow.Rating class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="@Model.MyShow.Progress" class="form-label"></label>
+			<input asp-for="@Model.MyShow.Progress" class="form-control" />
+			<span asp-validation-for=@Model.MyShow.Progress class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="@Model.MyShow.Comment" class="form-label"></label>
+			<textarea asp-for="@Model.MyShow.Comment" class="form-control" rows="3" ></textarea>
+			<span asp-validation-for=@Model.MyShow.Comment class="text-danger"></span>
+		</div>
+		<button type="submit" class="btn btn-warning w-100">Add to WatchList</button>
+	</form>
+</div>
+

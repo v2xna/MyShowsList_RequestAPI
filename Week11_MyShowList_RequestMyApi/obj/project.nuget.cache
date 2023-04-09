@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "o2QF59a1xtA1+zVAX35hnebIrVJnYrCMo4p6Wp8dNxSu5QfNfF3KZmHZEF+WPqBvqPn/F5IZ+kIFbDMib640KA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\GAMER\\Desktop\\C#\\Week11_MyShowList_RequestMyApi\\Week11_MyShowList_RequestMyApi\\Week11_MyShowList_RequestMyApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GAMER\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
